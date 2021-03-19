@@ -10,11 +10,15 @@
 		B52AA0B02602EA1100C1FD16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52AA0AF2602EA1100C1FD16 /* AppDelegate.swift */; };
 		B52AA0B22602EA1100C1FD16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52AA0B12602EA1100C1FD16 /* SceneDelegate.swift */; };
 		B52AA0B42602EA1100C1FD16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52AA0B32602EA1100C1FD16 /* ViewController.swift */; };
-		B52AA0B72602EA1100C1FD16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52AA0B52602EA1100C1FD16 /* Main.storyboard */; };
 		B52AA0B92602EA1200C1FD16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52AA0B82602EA1200C1FD16 /* Assets.xcassets */; };
 		B52AA0BC2602EA1200C1FD16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52AA0BA2602EA1200C1FD16 /* LaunchScreen.storyboard */; };
 		B52AA0C72602EA1200C1FD16 /* BasicAuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52AA0C62602EA1200C1FD16 /* BasicAuthenticationTests.swift */; };
 		B52AA0D22602EA1200C1FD16 /* BasicAuthenticationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52AA0D12602EA1200C1FD16 /* BasicAuthenticationUITests.swift */; };
+		B52AA0E62602F78600C1FD16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52AA0E52602F78600C1FD16 /* LoginViewController.swift */; };
+		B52AA10226030CAA00C1FD16 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52AA10126030CAA00C1FD16 /* RootViewController.swift */; };
+		B52AA10726030F5200C1FD16 /* RootNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52AA10626030F5200C1FD16 /* RootNavController.swift */; };
+		B52AA23526051FC100C1FD16 /* JWTDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52AA23426051FC100C1FD16 /* JWTDecode.swift */; };
+		B52AA23F2605264F00C1FD16 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52AA23E2605264F00C1FD16 /* DateExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,6 @@
 		B52AA0AF2602EA1100C1FD16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B52AA0B12602EA1100C1FD16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B52AA0B32602EA1100C1FD16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B52AA0B62602EA1100C1FD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B52AA0B82602EA1200C1FD16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B52AA0BB2602EA1200C1FD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B52AA0BD2602EA1200C1FD16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		B52AA0CD2602EA1200C1FD16 /* BasicAuthenticationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicAuthenticationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52AA0D12602EA1200C1FD16 /* BasicAuthenticationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAuthenticationUITests.swift; sourceTree = "<group>"; };
 		B52AA0D32602EA1200C1FD16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B52AA0E52602F78600C1FD16 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B52AA10126030CAA00C1FD16 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B52AA10626030F5200C1FD16 /* RootNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavController.swift; sourceTree = "<group>"; };
+		B52AA23426051FC100C1FD16 /* JWTDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecode.swift; sourceTree = "<group>"; };
+		B52AA23E2605264F00C1FD16 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				B52AA0AF2602EA1100C1FD16 /* AppDelegate.swift */,
+				B52AA23E2605264F00C1FD16 /* DateExtensions.swift */,
 				B52AA0B12602EA1100C1FD16 /* SceneDelegate.swift */,
+				B52AA0E52602F78600C1FD16 /* LoginViewController.swift */,
+				B52AA10126030CAA00C1FD16 /* RootViewController.swift */,
+				B52AA23426051FC100C1FD16 /* JWTDecode.swift */,
+				B52AA10626030F5200C1FD16 /* RootNavController.swift */,
 				B52AA0B32602EA1100C1FD16 /* ViewController.swift */,
-				B52AA0B52602EA1100C1FD16 /* Main.storyboard */,
 				B52AA0B82602EA1200C1FD16 /* Assets.xcassets */,
 				B52AA0BA2602EA1200C1FD16 /* LaunchScreen.storyboard */,
 				B52AA0BD2602EA1200C1FD16 /* Info.plist */,
@@ -233,7 +245,6 @@
 			files = (
 				B52AA0BC2602EA1200C1FD16 /* LaunchScreen.storyboard in Resources */,
 				B52AA0B92602EA1200C1FD16 /* Assets.xcassets in Resources */,
-				B52AA0B72602EA1100C1FD16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52AA10226030CAA00C1FD16 /* RootViewController.swift in Sources */,
+				B52AA10726030F5200C1FD16 /* RootNavController.swift in Sources */,
 				B52AA0B42602EA1100C1FD16 /* ViewController.swift in Sources */,
+				B52AA23526051FC100C1FD16 /* JWTDecode.swift in Sources */,
 				B52AA0B02602EA1100C1FD16 /* AppDelegate.swift in Sources */,
+				B52AA23F2605264F00C1FD16 /* DateExtensions.swift in Sources */,
+				B52AA0E62602F78600C1FD16 /* LoginViewController.swift in Sources */,
 				B52AA0B22602EA1100C1FD16 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +312,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B52AA0B52602EA1100C1FD16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B52AA0B62602EA1100C1FD16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B52AA0BA2602EA1200C1FD16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
